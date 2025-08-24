@@ -20,7 +20,7 @@
       class="sticky top-0 z-50 bg-zinc-950/80 backdrop-blur-sm border-b border-zinc-50/10 border-dashed"
     >
       <nav
-        class="container mx-auto px-4 py-4 flex justify-between items-center"
+        class="container lg:w-[75vw] mx-auto px-4 py-4 flex justify-between items-center"
       >
         <!-- Logo -->
         <a href="#" class="text-2xl font-bold tracking-tight text-white">
@@ -103,13 +103,13 @@
       <!-- Hero Section -->
       <section
         id="hero"
-        class="container mx-auto px-4 flex flex-col items-center py-20 md:py-32 text-center"
+        class="container mx-auto px-4 flex flex-col items-center py-12 md:py-32 text-center"
       >
         <h1
           class="text-4xl md:text-6xl lg:w-[50vw] text-center font-extrabold leading-tight tracking-tight mb-4"
         >
           Unlock Your Potential with Our
-          <span class="text-indigo-500">Cutting-Edge</span> Solution.
+          <span class="bg-gradient-to-br from-indigo-700 to-indigo-400 text-transparent bg-clip-text ">Cutting-Edge</span> Solution.
         </h1>
         <p
           class="text-md md:text-xl font-light text-zinc-400 mb-8 max-w-3xl mx-auto"
@@ -126,7 +126,7 @@
             class="glowing-btn px-8 py-2 rounded-full text-lg font-bold bg-indigo-600 text-white shadow-lg transform hover:scale-105 transition-all flex w-full items-center gap-2 lg:w-max justify-center duration-300"
           >
             <span>Get Started Free</span>
-            <span></span>
+            <span><i class="fa-solid fa-chevron-right"></i></span>
           </a>
           <a
             href="#pricing"
@@ -137,17 +137,17 @@
         </div>
         <!-- Placeholder for Hero Image/Illustration -->
         <section class="mt-16 md:mt-24 lg:grid lg:grid-cols-5 flex *:border-zinc-50/5  ">
-          <div class="border-t border-b border-r ">
+          <div class="border-t illucenter  border-b border-r border-dashed ">
             <h1 class="text-transparent">hh</h1>
           </div>
-          <div class="border-t shadow-sm shadow-indigo-600/20 border-b p-4 bg-zinc-50/5 lg:col-span-3 ">
+          <div class="border-t bg-indigo-600/5 lg:h-[80vh] overflow-hidden shadow-sm shadow-indigo-600/20 border-b p-4 lg:col-span-3 ">
             <img
-              src="https://placehold.co/1000x600/1e293b/d1d5db?text=Awesome+Product+Screenshot"
+              src="./img/dash.webp"
               alt="Product Screenshot"
-              class="mx-auto rounded-xl shadow-2xl"
+              class="mx-auto rounded-xl h-full w-full object-cover   shadow-2xl"
             />
           </div>
-          <div class="border-t border-l border-b">
+          <div class="border-t illucenter border-l border-b border-dashed">
             <h1 class="text-transparent">ggg</h1>
           </div>
         </section>
@@ -206,7 +206,7 @@
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
             <!-- Feature 1 -->
             <div class="bento-card">
-              <div class="text-indigo-500 text-3xl mb-4">
+              <div class="text-indigo-500 border border-indigo-600/10 size-16 grid place-content-center  p-4 bg-indigo-600/5 rounded-full text-3xl mb-4">
                 <i class="fas fa-chart-line"></i>
               </div>
               <h3 class="text-2xl font-bold mb-2">Real-Time Analytics</h3>
@@ -231,7 +231,7 @@
             </div>
 
             <!-- Feature 3 -->
-            <div class="bento-card lg:col-span-1">
+            <div class="bento-card lg:col-span-2 ">
               <div class="text-indigo-500 text-3xl mb-4">
                 <i class="fas fa-robot"></i>
               </div>
@@ -255,32 +255,8 @@
               </p>
             </div>
 
-            <!-- Feature 5 -->
-            <div class="bento-card md:col-span-2 lg:col-span-1">
-              <div class="text-indigo-500 text-3xl mb-4">
-                <i class="fas fa-users-cog"></i>
-              </div>
-              <h3 class="text-2xl font-bold mb-2">
-                Seamless Team Collaboration
-              </h3>
-              <p class="text-gray-400">
-                Effortlessly collaborate with your team in one unified
-                workspace. Share files, leave comments, and track progress with
-                ease.
-              </p>
-            </div>
+            
 
-            <!-- Feature 6 -->
-            <div class="bento-card">
-              <div class="text-indigo-500 text-3xl mb-4">
-                <i class="fas fa-mobile-alt"></i>
-              </div>
-              <h3 class="text-2xl font-bold mb-2">Fully Mobile-Ready</h3>
-              <p class="text-gray-400">
-                Access your work from anywhere, on any device. Our platform is
-                fully optimized for a flawless mobile experience.
-              </p>
-            </div>
           </div>
         </section>
 
@@ -525,7 +501,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 py-12">
+    <footer class="bg-zinc-900 py-12">
       <div class="container mx-auto px-4 text-center">
         <div class="mb-8">
           <a href="#" class="text-2xl font-bold tracking-tight text-white">

@@ -1,5 +1,7 @@
 # SaaS Landing Page Template
 
+<img width="1898" height="967" alt="jupyter" src="https://github.com/user-attachments/assets/e892c2da-7a0f-4f7f-b7b1-11382d5170e0" />
+
 A modern, responsive, and sales-focused landing page template for a Software-as-a-Service (SaaS) product, built with pure HTML and the powerful utility-first framework, Tailwind CSS. This template is designed to be easily customizable and serves as an excellent starting point for your next project.
 
 ## ✨ 

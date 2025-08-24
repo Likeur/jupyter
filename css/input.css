@@ -1,1 +1,46 @@
-@import "tailwindcss"
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+.bento-card {
+    background-color: #1a1a2e; /* Dark purple/blue background */
+    color: #e0e0e0;
+    border-radius: 1.5rem; /* Rounded corners */
+    padding: 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out;
+}
+.bento-card:hover {
+    transform: translateY(-5px);
+}
+/* Custom styles for glowing button effect */
+.glowing-btn {
+    position: relative;
+    z-index: 1;
+}
+.glowing-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #FF6B6B, #F7C555, #6BCB77, #48A8F4);
+    background-size: 400%;
+    border-radius: 9999px;
+    z-index: -1;
+    filter: blur(8px);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.glowing-btn:hover::before {
+    opacity: 1;
+    animation: glowing-animation 20s linear infinite;
+}
+@keyframes glowing-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

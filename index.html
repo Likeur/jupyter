@@ -1,23 +1,551 @@
 <!doctype html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>jupyter</title>
-            <link rel="stylesheet" href="css/output.css">
-        </head>
-        <body class="p-4 h-screen flex items-center justify-center">
-    <main class="container mx-auto px-4 flex flex-col items-center gap-4">
-      <p class="text-center bg-blue-600/10 text-sm p-1 px-3 rounded-full text-blue-600">Template Rtpa simple html for jupyter</p>
-      <h1 class="text-center text-3xl lg:text-5xl font-bold lg:w-[60%]">
-         Focus on shipping what matter the most. Happy coding to you mate.
-      </h1>
-      <p class="text-zinc-500">
-        coded with love by
-        <a href="https://github.com/Likeur" class="underline text-blue-500"
-          >Likeur</a
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jupyter</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <!-- Font Awesome for icons (hamburger, social, etc.) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6jUa4L4B85W2q0C7RzWJ5fCqI6D4P8S/y7qO8y7W+g8dE8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-950 text-white">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-sm shadow-lg">
+      <nav
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold tracking-tight text-white">
+          <span class="text-indigo-500 font-light">Jupy</span>Ter
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex space-x-8">
+          <li>
+            <a href="#features" class="hover:text-indigo-400 transition-colors"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a href="#pricing" class="hover:text-indigo-400 transition-colors"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href="#testimonials"
+              class="hover:text-indigo-400 transition-colors"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="px-6 py-2 rounded-full bg-indigo-600 hover:bg-indigo-500 transition-colors font-medium"
+              >Get Started</a
+            >
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Button (Hamburger) -->
+        <button
+          id="mobile-menu-btn"
+          class="md:hidden text-gray-400 hover:text-white focus:outline-none"
         >
-      </p>
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu (Hidden by default) -->
+      <div id="mobile-menu" class="hidden md:hidden bg-gray-950 py-4 shadow-xl">
+        <ul class="flex flex-col items-center space-y-4">
+          <li>
+            <a
+              href="#features"
+              class="block w-full text-center hover:text-indigo-400 transition-colors py-2"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              href="#pricing"
+              class="block w-full text-center hover:text-indigo-400 transition-colors py-2"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href="#testimonials"
+              class="block w-full text-center hover:text-indigo-400 transition-colors py-2"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block w-full text-center px-6 py-2 rounded-full bg-indigo-600 hover:bg-indigo-500 transition-colors font-medium"
+              >Get Started</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="container mx-auto px-4 py-20 md:py-32 text-center"
+      >
+        <h1
+          class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4"
+        >
+          Unlock Your Potential with Our
+          <span class="text-indigo-500">Cutting-Edge</span> Solution.
+        </h1>
+        <p class="text-lg md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto">
+          Stop managing complexity and start innovating. Our platform
+          streamlines your workflow so you can focus on what truly matters:
+          growth.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6"
+        >
+          <a
+            href="#"
+            class="glowing-btn px-8 py-3 rounded-full text-lg font-bold bg-indigo-600 text-white shadow-lg transform hover:scale-105 transition-all duration-300"
+          >
+            Get Started Free
+          </a>
+          <a
+            href="#pricing"
+            class="px-8 py-3 rounded-full text-lg font-bold border border-gray-700 hover:bg-gray-800 transition-colors transform hover:scale-105 duration-300"
+          >
+            Learn More
+          </a>
+        </div>
+        <!-- Placeholder for Hero Image/Illustration -->
+        <div class="mt-16 md:mt-24">
+          <img
+            src="https://placehold.co/1000x600/1e293b/d1d5db?text=Awesome+Product+Screenshot"
+            alt="Product Screenshot"
+            class="mx-auto rounded-xl shadow-2xl"
+          />
+        </div>
+      </section>
+
+      <!-- Logo Cloud Section -->
+      <section class="container mx-auto px-4 py-16 md:py-24 text-center">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-400 mb-8">
+          Trusted by teams at the world's most innovative companies
+        </h2>
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center justify-items-center"
+        >
+          <img
+            src="https://placehold.co/150x50/334155/6b7280?text=Company+A"
+            alt="Company A Logo"
+            class="h-8 md:h-12 grayscale opacity-70 hover:opacity-100 transition-opacity"
+          />
+          <img
+            src="https://placehold.co/150x50/334155/6b7280?text=Company+B"
+            alt="Company B Logo"
+            class="h-8 md:h-12 grayscale opacity-70 hover:opacity-100 transition-opacity"
+          />
+          <img
+            src="https://placehold.co/150x50/334155/6b7280?text=Company+C"
+            alt="Company C Logo"
+            class="h-8 md:h-12 grayscale opacity-70 hover:opacity-100 transition-opacity"
+          />
+          <img
+            src="https://placehold.co/150x50/334155/6b7280?text=Company+D"
+            alt="Company D Logo"
+            class="h-8 md:h-12 grayscale opacity-70 hover:opacity-100 transition-opacity"
+          />
+          <img
+            src="https://placehold.co/150x50/334155/6b7280?text=Company+E"
+            alt="Company E Logo"
+            class="h-8 md:h-12 grayscale opacity-70 hover:opacity-100 transition-opacity"
+          />
+        </div>
+      </section>
+
+      <!-- Features Section (Bento Design) -->
+      <section id="features" class="container mx-auto px-4 py-16 md:py-24">
+        <h2 class="text-3xl md:text-5xl font-extrabold text-center mb-6">
+          Features That Drive
+          <span class="text-indigo-500">Unmatched</span> Results
+        </h2>
+        <p
+          class="text-center text-lg md:text-xl text-gray-400 mb-16 max-w-3xl mx-auto"
+        >
+          Our platform is engineered to solve your biggest challenges and
+          streamline your operations, all in one intuitive interface.
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
+          <!-- Feature 1 -->
+          <div class="bento-card">
+            <div class="text-indigo-500 text-3xl mb-4">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Real-Time Analytics</h3>
+            <p class="text-gray-400">
+              Gain instant insights into your performance with our powerful,
+              real-time analytics dashboard. Make data-driven decisions on the
+              fly.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="bento-card md:col-span-2">
+            <div class="text-indigo-500 text-3xl mb-4">
+              <i class="fas fa-lock"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Enterprise-Grade Security</h3>
+            <p class="text-gray-400">
+              Your data is our top priority. We use advanced encryption and
+              security protocols to ensure your information is always safe and
+              sound.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="bento-card lg:col-span-1">
+            <div class="text-indigo-500 text-3xl mb-4">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">AI-Powered Automation</h3>
+            <p class="text-gray-400">
+              Automate repetitive tasks with intelligent AI, freeing up your
+              team to focus on strategic initiatives and creative work.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="bento-card">
+            <div class="text-indigo-500 text-3xl mb-4">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">24/7 Premium Support</h3>
+            <p class="text-gray-400">
+              Our dedicated support team is available around the clock to assist
+              you. We're here to help you succeed, no matter the time zone.
+            </p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="bento-card md:col-span-2 lg:col-span-1">
+            <div class="text-indigo-500 text-3xl mb-4">
+              <i class="fas fa-users-cog"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Seamless Team Collaboration</h3>
+            <p class="text-gray-400">
+              Effortlessly collaborate with your team in one unified workspace.
+              Share files, leave comments, and track progress with ease.
+            </p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="bento-card">
+            <div class="text-indigo-500 text-3xl mb-4">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Fully Mobile-Ready</h3>
+            <p class="text-gray-400">
+              Access your work from anywhere, on any device. Our platform is
+              fully optimized for a flawless mobile experience.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section
+        id="pricing"
+        class="container mx-auto px-4 py-16 md:py-24 text-center"
+      >
+        <h2 class="text-3xl md:text-5xl font-extrabold mb-6">
+          Simple, Transparent <span class="text-indigo-500">Pricing</span>
+        </h2>
+        <p class="text-lg md:text-xl text-gray-400 mb-16 max-w-2xl mx-auto">
+          No hidden fees, no complicated tiers. Just a plan that scales with
+          your business needs.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Basic Plan -->
+          <div
+            class="bg-gray-800 p-8 rounded-3xl shadow-lg border border-gray-700 transform hover:scale-105 transition-transform duration-300"
+          >
+            <h3 class="text-2xl font-bold mb-2">Basic</h3>
+            <p class="text-sm text-gray-400 mb-6">
+              For individuals and small teams
+            </p>
+            <div class="text-4xl font-extrabold mb-2">
+              $29<span class="text-lg font-normal text-gray-400">/mo</span>
+            </div>
+            <ul class="text-left space-y-3 text-gray-300 mb-8">
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-indigo-400 mr-3"></i
+                ><span>Up to 5 Users</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-indigo-400 mr-3"></i
+                ><span>Basic Analytics</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-indigo-400 mr-3"></i
+                ><span>Community Support</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-indigo-400 mr-3"></i
+                ><span>10 GB Storage</span>
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="block w-full text-center py-3 rounded-full bg-indigo-600 hover:bg-indigo-500 transition-colors font-medium"
+              >Get Started</a
+            >
+          </div>
+
+          <!-- Pro Plan (Most Popular) -->
+          <div
+            class="bg-indigo-600 p-8 rounded-3xl shadow-lg border-4 border-indigo-400 transform hover:scale-105 transition-transform duration-300"
+          >
+            <span
+              class="inline-block bg-white text-indigo-600 text-xs font-bold px-3 py-1 rounded-full mb-4"
+              >Most Popular</span
+            >
+            <h3 class="text-2xl font-bold mb-2">Pro</h3>
+            <p class="text-sm text-indigo-200 mb-6">
+              For growing teams and businesses
+            </p>
+            <div class="text-4xl font-extrabold mb-2">
+              $79<span class="text-lg font-normal text-indigo-200">/mo</span>
+            </div>
+            <ul class="text-left space-y-3 text-indigo-100 mb-8">
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-white mr-3"></i
+                ><span>Unlimited Users</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-white mr-3"></i
+                ><span>Advanced Analytics</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-white mr-3"></i
+                ><span>24/7 Priority Support</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-white mr-3"></i
+                ><span>1 TB Storage</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-white mr-3"></i
+                ><span>API Access</span>
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="glowing-btn block w-full text-center py-3 rounded-full bg-white text-indigo-600 hover:bg-gray-200 transition-colors font-bold"
+              >Start Your Free Trial</a
+            >
+          </div>
+
+          <!-- Enterprise Plan -->
+          <div
+            class="bg-gray-800 p-8 rounded-3xl shadow-lg border border-gray-700 transform hover:scale-105 transition-transform duration-300"
+          >
+            <h3 class="text-2xl font-bold mb-2">Enterprise</h3>
+            <p class="text-sm text-gray-400 mb-6">
+              For large organizations with custom needs
+            </p>
+            <div class="text-4xl font-extrabold mb-2">Custom</div>
+            <p class="text-lg text-gray-400 mb-6">
+              Pricing tailored to your scale.
+            </p>
+            <ul class="text-left space-y-3 text-gray-300 mb-8">
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-indigo-400 mr-3"></i
+                ><span>Everything in Pro</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-indigo-400 mr-3"></i
+                ><span>Dedicated Account Manager</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-indigo-400 mr-3"></i
+                ><span>Custom Integrations</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check-circle text-indigo-400 mr-3"></i
+                ><span>On-premise Hosting</span>
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="block w-full text-center py-3 rounded-full bg-gray-700 hover:bg-gray-600 transition-colors font-medium"
+              >Contact Sales</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section
+        id="testimonials"
+        class="container mx-auto px-4 py-16 md:py-24 text-center"
+      >
+        <h2 class="text-3xl md:text-5xl font-extrabold mb-6">
+          Hear It From Our <span class="text-indigo-500">Happy Customers</span>
+        </h2>
+        <p class="text-lg md:text-xl text-gray-400 mb-16 max-w-2xl mx-auto">
+          See how our solution has helped businesses like yours reach new
+          heights.
+        </p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div
+            class="bg-gray-800 p-8 rounded-3xl shadow-lg border border-gray-700"
+          >
+            <p class="text-lg mb-4 italic">
+              "This platform has completely transformed how we operate. The
+              automation features saved us countless hours every week. We
+              couldn't imagine going back!"
+            </p>
+            <div class="flex items-center justify-center">
+              <img
+                src="https://placehold.co/60x60/d1d5db/374151?text=A"
+                alt="Avatar"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div class="text-left">
+                <p class="font-bold">Alex Chen</p>
+                <p class="text-sm text-gray-400">CEO, Innovate Inc.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div
+            class="bg-gray-800 p-8 rounded-3xl shadow-lg border border-gray-700"
+          >
+            <p class="text-lg mb-4 italic">
+              "The real-time analytics are a game-changer. We can make decisions
+              faster and with more confidence, leading to a 30% increase in
+              productivity. Highly recommended!"
+            </p>
+            <div class="flex items-center justify-center">
+              <img
+                src="https://placehold.co/60x60/d1d5db/374151?text=B"
+                alt="Avatar"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div class="text-left">
+                <p class="font-bold">Maria Rodriguez</p>
+                <p class="text-sm text-gray-400">
+                  Head of Operations, Nexus Corp.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div
+            class="bg-gray-800 p-8 rounded-3xl shadow-lg border border-gray-700"
+          >
+            <p class="text-lg mb-4 italic">
+              "The support team is incredible. They're knowledgeable,
+              responsive, and genuinely care about our success. It's a true
+              partnership."
+            </p>
+            <div class="flex items-center justify-center">
+              <img
+                src="https://placehold.co/60x60/d1d5db/374151?text=C"
+                alt="Avatar"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div class="text-left">
+                <p class="font-bold">David Lee</p>
+                <p class="text-sm text-gray-400">
+                  Product Manager, Global Tech Solutions
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section class="container mx-auto px-4 py-16 md:py-24 text-center">
+        <div class="bg-indigo-600 rounded-3xl p-8 md:p-16">
+          <h2 class="text-3xl md:text-5xl font-extrabold mb-4 leading-tight">
+            Ready to Revolutionize Your Workflow?
+          </h2>
+          <p class="text-lg md:text-xl text-indigo-100 mb-8 max-w-3xl mx-auto">
+            Join thousands of forward-thinking businesses and start your journey
+            towards effortless productivity today.
+          </p>
+          <a
+            href="#"
+            class="glowing-btn px-10 py-4 rounded-full text-xl font-bold bg-white text-indigo-600 shadow-lg transform hover:scale-105 transition-all duration-300"
+          >
+            Start Your Free Trial Now
+          </a>
+        </div>
+      </section>
     </main>
-        </body>
-        </html>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+      <div class="container mx-auto px-4 text-center">
+        <div class="mb-8">
+          <a href="#" class="text-2xl font-bold tracking-tight text-white">
+            <span class="text-indigo-500">Your</span>Brand
+          </a>
+        </div>
+        <div class="flex flex-wrap justify-center space-x-6 mb-8 text-gray-400">
+          <a href="#" class="hover:text-white transition-colors">About Us</a>
+          <a href="#" class="hover:text-white transition-colors">Services</a>
+          <a href="#" class="hover:text-white transition-colors">Contact</a>
+          <a href="#" class="hover:text-white transition-colors"
+            >Privacy Policy</a
+          >
+        </div>
+        <div class="flex justify-center space-x-6 text-gray-400 mb-8">
+          <a href="#" class="hover:text-white transition-colors"
+            ><i class="fab fa-twitter text-2xl"></i
+          ></a>
+          <a href="#" class="hover:text-white transition-colors"
+            ><i class="fab fa-linkedin text-2xl"></i
+          ></a>
+          <a href="#" class="hover:text-white transition-colors"
+            ><i class="fab fa-facebook text-2xl"></i
+          ></a>
+          <a href="#" class="hover:text-white transition-colors"
+            ><i class="fab fa-instagram text-2xl"></i
+          ></a>
+        </div>
+        <p class="text-gray-500 text-sm">
+          &copy; 2024 YourBrand. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>

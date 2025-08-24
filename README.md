@@ -4,15 +4,15 @@
 
 A modern, responsive, and sales-focused landing page template for a Software-as-a-Service (SaaS) product, built with pure HTML and the powerful utility-first framework, Tailwind CSS. This template is designed to be easily customizable and serves as an excellent starting point for your next project.
 
-## ✨ 
+## ✨ Features
 
-Fully Responsive Design: Optimized for a flawless viewing experience on all devices, from mobile phones and tablets to large desktop screens.
+1. Fully Responsive Design: Optimized for a flawless viewing experience on all devices, from mobile phones and tablets to large desktop screens.
 
-1. Intuitive Navigation: A responsive navbar with a hamburger menu for mobile devices ensures a clean and user-friendly experience.
+2. Intuitive Navigation: A responsive navbar with a hamburger menu for mobile devices ensures a clean and user-friendly experience.
 
-2. Sales-Optimized Copywriting: Engaging, sales-driven text to capture user attention and convert visitors into leads.
+3. Sales-Optimized Copywriting: Engaging, sales-driven text to capture user attention and convert visitors into leads.
 
-3. Dynamic Sections: Includes all essential sections for a high-converting landing page:
+4. Dynamic Sections: Includes all essential sections for a high-converting landing page:
 
 - Hero Section
 
@@ -27,9 +27,9 @@ Fully Responsive Design: Optimized for a flawless viewing experience on all devi
 - Call to Action (CTA)
 
 
-4. Modern Styling: Utilizes custom CSS for a subtle glowing button effect and a sleek, dark-themed UI.
+5. Modern Styling: Utilizes custom CSS for a subtle glowing button effect and a sleek, dark-themed UI.
 
-5. Ease of Use: A single HTML file with all code in one place for quick and easy setup.
+6. Ease of Use: A single HTML file with all code in one place for quick and easy setup.
 
 ## 🚀 Getting Started
 
